@@ -1,10 +1,8 @@
 <?php
 
-$str = "C'est ma première fonction.";
-
-function echoString ($string) : string
+function echoString ()
 {
-  return $string;
+  echo "C'est ma première fonction.";
 }
 
-echo echoString($str);
+echoString();
