@@ -1,5 +1,8 @@
 <?php
 
-$strLength = "Ceci est une chaîne de caractère.";
+$intOne = 30;
+$intTwo = 40;
 
-echo $strLength . "<br> a " . strlen($strLength) . " caractères.";
+echo "intOne : " . $intOne . "<br> intTwo : " . $intTwo . "<br>";
+
+echo ($intOne > $intTwo) ? $intOne : $intTwo ;
