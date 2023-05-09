@@ -1,23 +1,17 @@
 <?php
 
-$i = 1;
-$prime = '';
-
-while ($i <= 5) {
-  for ($j = 2; $j <= $i; $j++) {
-    if ($i % $j === 0) {
+function isPrime(int $n)
+{
+  for ($i = 2; $i < $n; $i++) {
+    if ($n % $i === 0) {
       return false;
-    } else {
-    echo $i . ", ";
     }
   }
-  echo "$i<br>";
-  $i++;
+  return true;
 }
 
-// var_dump($prime);
-
-function prime ()
-{
-
-} 
+for ($i = 2; $i <= 5; $i++) {
+  if (isPrime($i)) {
+    echo $i . ', ';
+  }
+}
