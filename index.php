@@ -1,9 +1,15 @@
 <?php
 
-$strLength = "Ceci est une chaîne de caractère.";
+$stringTp = "Ceci est une chaîne de caractère.";
 
-$strArray = explode(' ', $strLength);
+$substr = "est une chaîne";
 
-foreach ($strArray as $substr) {
-  echo "$substr<br>";
+$substrLength = strlen($substr);
+
+$pos = strpos($stringTp, $substr);
+
+if (str_contains($stringTp, $substr)) {
+    echo substr($stringTp, $pos, $substrLength);
+} else {
+  echo "Cette chaine n'est pas dans cette phrase.";
 }
