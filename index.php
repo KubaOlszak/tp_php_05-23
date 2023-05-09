@@ -1,8 +1,23 @@
 <?php
 
-function addFive ($int)
-{
-  return (!is_int($int)) ? "Le nombre n'est pas un entier" : ($int + 5);
+$i = 1;
+$prime = '';
+
+while ($i <= 5) {
+  for ($j = 2; $j <= $i; $j++) {
+    if ($i % $j === 0) {
+      return false;
+    } else {
+    echo $i . ", ";
+    }
+  }
+  echo "$i<br>";
+  $i++;
 }
 
-echo addFive(8);
+// var_dump($prime);
+
+function prime ()
+{
+
+} 
