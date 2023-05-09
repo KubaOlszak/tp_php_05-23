@@ -1,8 +1,8 @@
 <?php
 
-function addFive ($int): int
+function addFive ($int)
 {
-  return ($int + 5);
+  return (!is_int($int)) ? "Le nombre n'est pas un entier" : ($int + 5);
 }
 
 echo addFive(8);
