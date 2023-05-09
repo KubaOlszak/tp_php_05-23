@@ -1,17 +1,8 @@
 <?php
 
-echo "Hello World! <br><br>";
+$i = 1;
 
-$movieArray = [
-  "Vertigo",
-  "Minority Report",
-  "Blade Runner",
-  "Le Dernier des Mohicans",
-  "Pacific Rim"
-];
-
-echo "<ul>";
-foreach ($movieArray as $movie) {
-  echo "<li>$movie</li>";
+while ($i <= 50) {
+  echo "$i <br>";
+  $i++;
 }
-echo "</ul>";
