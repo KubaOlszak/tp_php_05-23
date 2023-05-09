@@ -1,7 +1,6 @@
 <?php
 
 $name;
-
 if(isset($_GET['firstname']) && !empty($_GET['firstname'])) {
   $name = $_GET['firstname'];
 }
@@ -18,10 +17,10 @@ if(isset($_GET['firstname']) && !empty($_GET['firstname'])) {
   <body>
     <form action="" method="GET">
       <input type="text" name="firstname">
-      <input type="submit" value="Send">
+      <input type="submit" name="submit" value="Send">
     </form>
     <p>
-      Name : <?= $name; ?>
+      Name : <?php if (isset($_GET['submit'])) { echo $name; } ?>
     </p>
 </body>
 </html>
